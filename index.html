@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliveira bussiness boost</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* border: solid 1px black; */
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .main-content img {
+            box-sizing: border-box;
+            width: 550px;
+        }
+
+        .qr-code-section-container {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+
+        .qr-code-section {
+            width: 140px;
+            height: 140px;
+        }
+
+        .qr-code-section img {
+            position: relative;
+            animation: slide-in 2s ease-in;
+            width: 140px;
+            height: 140px;
+
+        }
+
+        @keyframes slide-in {
+            0% {
+                left: -100%;
+                /* Posicione a imagem fora do contêiner, à esquerda */
+            }
+
+            100% {
+                left: 0;
+                /* Posicione a imagem no centro do contêiner */
+            }
+        }
+
+        .qr-code-section-container p {
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-content">
+
+
+        <div class="qr-code-section-container">
+
+            <div class="qr-code-section">
+                <img src="./data/qr.ioi.tw.png" alt="fale conosco escaneando o qrcode">
+            </div>
+            <p>ESCANEIE E ANUNCIE<br> SEU NEGÓCIO AGORA MESMO!</p>
+
+        </div>
+
+
+    </div>
+    <p>Venha alavancar seu negócio e anuncie conosco</p>
+
+
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+
+</html>
