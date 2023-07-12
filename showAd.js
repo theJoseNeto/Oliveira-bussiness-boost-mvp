@@ -23,4 +23,4 @@ setInterval(() => {
     counter++;
     if (counter === data.length) counter = 0;
 
-}, 8000)
+}, 8000); 
