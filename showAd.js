@@ -1,15 +1,18 @@
 let img = document.createElement('img')
-let mainContent = document.querySelector(".main-content");
+let mainContent = document.querySelector(".main-content-obb");
 
 const data = [
+
     {
-        path: "./data/OliveiraBB.png",
-    },
-    {
-        path: "./data/OliveiraBB.png",
+        path: "./data/oliveiraBB-banner.png"
     },
 
-]
+        {
+        path: "./data/qp-oliv.png"
+    }
+
+
+];
 
 let counter = 0;
 
@@ -20,4 +23,4 @@ setInterval(() => {
     counter++;
     if (counter === data.length) counter = 0;
 
-}, 3000)
+}, 8000)
