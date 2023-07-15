@@ -9,7 +9,9 @@ const data = [
 
         {
         path: "./data/qp-oliv.png"
-    }
+    }, 
+
+    { path: "./data/QQQ.png"},
 
 
 ];
