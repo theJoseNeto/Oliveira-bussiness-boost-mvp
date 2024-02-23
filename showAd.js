@@ -2,16 +2,17 @@ let img = document.createElement('img')
 let mainContent = document.querySelector(".main-content-obb");
 const audio = document.querySelector("#audio_");
 const data = [
+    { path: "./data/dip.png" },
 
-    {
-        path: "./data/oliveiraBB-banner.png"
-    },
+    // {
+    //     path: "./data/oliveiraBB-banner.png"
+    // },
 
-    {
-        path: "./data/qp-oliv.png"
-    },
+    // {
+    //     path: "./data/qp-oliv.png"
+    // },
 
-    { path: "./data/QQQ.png" },
+    // { path: "./data/QQQ.png" },
 
 
 ];
