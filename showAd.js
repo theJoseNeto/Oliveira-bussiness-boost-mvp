@@ -1,28 +1,34 @@
 let img = document.createElement('img')
 let mainContent = document.querySelector(".main-content-obb");
-
+const audio = document.querySelector("#audio_");
 const data = [
 
     {
         path: "./data/oliveiraBB-banner.png"
     },
 
-        {
+    {
         path: "./data/qp-oliv.png"
-    }, 
+    },
 
-    { path: "./data/QQQ.png"},
+    { path: "./data/QQQ.png" },
 
 
 ];
 
 let counter = 0;
 
+const date = new Date()
+const hour = date.getHours();
+audio.style.display = "none";
+
 setInterval(() => {
     img.src = data[counter].path;
     img.className = "banner"
     mainContent.appendChild(img);
     counter++;
-    if (counter === data.length) counter = 0;
 
-}, 8000); 
+    if (counter === data.length) counter = 0;
+    if (hour === 17) audio.play();
+
+}, 4000); 
