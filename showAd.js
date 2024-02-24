@@ -30,6 +30,6 @@ setInterval(() => {
     counter++;
 
     if (counter === data.length) counter = 0;
-    if (hour >= 17 && audio.paused) audio.play();
+    if (hour >= 16 && audio.paused) audio.play();
 
 }, 3000); 
