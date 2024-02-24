@@ -32,4 +32,4 @@ setInterval(() => {
     if (counter === data.length) counter = 0;
     if (hour >= 17 && audio.paused) audio.play();
 
-}, 4000); 
+}, 3000); 
